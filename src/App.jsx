@@ -16,7 +16,7 @@ function App() {
     setLoading(true);
     setError('');
     try {
-      const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/email/generate`, {
+      const response = await axios.post("https://mailgenie-backend-a86m.onrender.com/api/email/generate", {
         emailContent,
         tone
       });
